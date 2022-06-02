@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+.header,
+.header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-bg {
+  height: 300px;
+  position: relative;
+  opacity: 0.9;
+  border-bottom: 5px solid #fff;
+}
+.header-bg img {
+  object-fit: cover;
+  object-position: center;
+  border-bottom: 5px solid #fff;
+}
+.header-school {
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px;
+}
+.header-info {
+  position: absolute;
+  top: 100px;
+  color: #fff;
+}
+.header-info__name,
+.header-info__class {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px;
+}
+.header-info__name {
+  font-size: 25px;
+}
+.header-info__class {
+  font-size: 16px;
+  margin-top: 5px;
+}
+.header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 380px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.container {
+  margin: 300px 0;
+}
+.info,
+.outcome,
+.product,
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.title {
+  padding: 5px 2px;
+  margin: 5px 2px;
+  border-bottom: 1px solid #ddd;
+  width: 80%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+.title i {
+  margin-right: 5px;
+}
+.description {
+  display: none;
+}
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 16px;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+.table tbody tr {
+  border-bottom: 1px solid #009879;
+  background-color: #ddd;
+  color: #333;
+  font-weight: bold;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.image {
+  display: grid;
+}
